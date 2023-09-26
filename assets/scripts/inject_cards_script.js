@@ -8,6 +8,7 @@ function generateMenuItem(category, menuData) {
   menuData.forEach((dish) => {
     const article = document.createElement("article");
     article.innerHTML = `
+      <div class="card__front">
       <figure class="card__figure">
         <img src="${dish.affiche}" alt="${dish.name}">
       </figure>
@@ -15,6 +16,11 @@ function generateMenuItem(category, menuData) {
       <div class="card__footer">
         <p>${dish.prix}€</p>
         <button class = "addToBasket"><img src="assets/img/addToBag.png" alt="Add to Bag"></button>
+      </div>
+      </div>
+      <div class="card__back">
+      <h3>${dish.name}</h3>
+      <p>${dish.description}</p>
       </div>
     `;
 
