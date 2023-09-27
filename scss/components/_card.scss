@@ -54,7 +54,7 @@
         font-weight: 500;
         border-radius: 0 0 10px 10px;
     }
-    .cards__single.flip {
+    .card.flip {
         transform: rotateY(180deg);
         -webkit-transform: rotateY(180deg);
     }    
